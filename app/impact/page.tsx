@@ -17,8 +17,8 @@ export default function ImpactPage() {
       <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(6,26,45,0.06),_rgba(255,255,255,1))]">
         <div className="mx-auto max-w-6xl px-6 py-18 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Impact</p>
-            <h1 className="mt-4 text-4xl font-semibold leading-tight text-gold sm:text-5xl">GGFG measures impact not only by output, but by the durability of the founders it creates.</h1>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Impact</p>
+            <h1 className="mt-4 text-4xl font-semibold leading-tight text-navy sm:text-5xl">GGFG measures impact not only by output, but by the durability of the founders it creates.</h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-navy/80">The ambition is clear: build founders who generate high-value businesses, strengthen communities, and expand long-term regional prosperity.</p>
           </motion.div>
         </div>
@@ -30,8 +30,8 @@ export default function ImpactPage() {
             const Icon = outcome.icon;
             return (
               <motion.div key={outcome.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.05 }} className="card-hover rounded-[1.75rem] border border-navy/10 bg-navy/10 p-8 shadow-sm">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Icon size={20} /></div>
-                <h3 className="mt-6 text-2xl font-semibold text-gold">{outcome.title}</h3>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-goldDark"><Icon size={20} /></div>
+                <h3 className="mt-6 text-2xl font-semibold text-navy">{outcome.title}</h3>
                 <p className="mt-4 text-base leading-8 text-navy/80">{outcome.body}</p>
               </motion.div>
             );

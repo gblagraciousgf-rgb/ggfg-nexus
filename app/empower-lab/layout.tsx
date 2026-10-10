@@ -18,10 +18,10 @@ export default function EmpowerLabLayout({ children }: { children: React.ReactNo
       <header className="border-b border-navy/10 bg-[linear-gradient(120deg,_rgba(210,175,46,0.15),_rgba(3,20,33,0.16))]">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-navy/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.3em] text-gold">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-navy/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">
               <Sparkles size={16} /> Empower Lab
             </div>
-            <h1 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">Learn. Think. Build. Grow.</h1>
+            <h1 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Learn. Think. Build. Grow.</h1>
             <p className="mt-2 max-w-2xl text-sm leading-7 text-navy sm:text-base">
               A practical entrepreneurship learning environment created by GGFG Nexus as part of Empower 50K.
             </p>
@@ -35,7 +35,7 @@ export default function EmpowerLabLayout({ children }: { children: React.ReactNo
           {sectionLinks.map((item) => {
             const Icon = item.icon;
             return (
-              <Link key={item.href} href={item.href} className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-navy/5 px-4 py-2 text-sm font-medium text-navy/85 transition hover:border-gold/30 hover:text-gold">
+              <Link key={item.href} href={item.href} className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-navy/5 px-4 py-2 text-sm font-medium text-navy/85 transition hover:border-gold/30 hover:text-goldDark">
                 <Icon size={16} /> {item.label}
               </Link>
             );

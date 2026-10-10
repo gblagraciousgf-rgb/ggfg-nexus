@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, BarChart3, Compass, Sparkles, TrendingUp } from 'lucide-react';
+import { ArrowRight, BarChart3, Sparkles } from 'lucide-react';
 
 const stats = [
   { value: '50K+', label: 'Entrepreneurs envisioned by 2050' },
@@ -34,27 +34,24 @@ const pillars = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-navy/10 text-navy">
+    <main className="min-h-screen bg-cream text-navy">
       <section className="relative overflow-hidden border-b border-midnight/20 bg-midnight text-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(210,175,46,0.18),_transparent_35%)]" />
         <div className="mx-auto flex max-w-7xl flex-col gap-16 px-6 py-16 lg:px-8 lg:py-24">
           <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.25em] text-gold">
-                <Sparkles size={16} /> Building platforms, pathways, and systems
+                <Sparkles size={16} /> Entrepreneurship, leadership, and opportunity
               </p>
               <h1 className="text-balance text-5xl font-semibold leading-[0.95] tracking-tight text-gold sm:text-6xl lg:text-7xl">
-                We build platforms, pathways, and systems that empower people to shape their future and create lasting impact.
+                Building the next generation of entrepreneurs across West Africa.
               </h1>
               <div className="mt-6 h-1.5 w-24 rounded-full bg-gradient-to-r from-gold via-gold/70 to-transparent" />
-              <p className="mt-4 text-lg leading-8 text-white/80">
-                GGFG operates through capability platforms, leadership pathways, community ecosystems, and opportunity systems that help individuals and communities grow, lead, and flourish.
-              </p>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
-                GGFG is a global movement designing the platforms and systems that unlock human potential. Through capability development, leadership formation, community ecosystem building, and long-term opportunity systems, we empower people to transform their lives and shape the future.
+                GGFG equips founders with the skills, mentorship, and networks to build ventures and create opportunity in their communities.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/empower-50k" className="btn-navy">
+                <Link href="/empower-50k" className="btn-gold">
                   Explore Empower 50K <ArrowRight size={16} />
                 </Link>
                 <Link href="/about" className="btn-outline-light">
@@ -63,55 +60,41 @@ export default function HomePage() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="grid gap-6 rounded-[2rem] border border-navy/20 bg-midnight text-white shadow-soft">
-                <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-[2rem] border-b border-navy/20 bg-midnight/90">
-                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(209,175,46,0.18),_transparent_45%)]" />
-                  <div className="absolute bottom-6 left-6 max-w-sm rounded-[1.5rem] border border-white/20 bg-gold/10 p-5 backdrop-blur text-white">
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Flagship Initiative</p>
-                    <p className="mt-2 text-lg font-semibold text-gold">Empower 50K</p>
-                    <p className="mt-2 text-sm leading-7 text-white/80">A long-term movement designed to build practical entrepreneurship capacity across West Africa.</p>
+            <motion.div initial={{ opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="overflow-hidden rounded-2xl border border-white/10 bg-navy text-white shadow-soft">
+              <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top_right,_rgba(227,163,66,0.18),_transparent_50%)] px-8 py-10 sm:px-10 sm:py-12">
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Empower 50K · Flagship initiative</p>
+                <p className="mt-8 font-display text-7xl font-semibold leading-none text-gold sm:text-8xl">50K</p>
+                <p className="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-white/70">Entrepreneurs by 2050</p>
+                <p className="mt-6 max-w-sm text-base leading-7 text-white/80">Developing founders across West Africa through mentorship, venture support, and leadership development.</p>
+              </div>
+              <div className="grid grid-cols-2 border-t border-white/10 bg-midnight">
+                {stats.slice(1).map((stat) => (
+                  <div key={stat.label} className="p-6 sm:p-8">
+                    <p className="text-3xl font-semibold text-gold">{stat.value}</p>
+                    <p className="mt-2 text-sm leading-6 text-white/70">{stat.label}</p>
                   </div>
-                </div>
-              <div className="rounded-b-[2rem] bg-navy p-8 text-white">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Flagship Initiative</p>
-                    <h2 className="mt-3 text-3xl font-semibold">Empower 50K</h2>
-                  </div>
-                  <div className="rounded-full bg-gold/10 p-3"><TrendingUp size={24} className="text-gold" /></div>
-                </div>
-                <p className="mt-6 text-base leading-8 text-white/85">
-                  A long-term movement designed to develop 50,000 entrepreneurs across West Africa by 2050 through mentorship, venture support, leadership development, and regional network building.
-                </p>
-                <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  {stats.map((stat) => (
-                    <div key={stat.label} className="rounded-2xl border border-white/10 bg-navy/10 p-4">
-                      <p className="text-2xl font-semibold text-gold">{stat.value}</p>
-                      <p className="mt-2 text-sm text-white/70">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
+                ))}
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8">
-        <div className="rounded-[2.5rem] border border-gold/20 bg-navy/10 p-8 shadow-soft lg:p-10">
-          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <section className="border-y border-navy/10 bg-white/70">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Now on the main site</p>
-              <h3 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">Empower Lab brings practical learning, assessments, and certificates into one clear experience.</h3>
-              <p className="mt-4 text-lg leading-8 text-navy/90">Visitors can now explore the learning modules, take the assessment, and view the certificate journey directly from GGFG’s public site.</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Empower Lab</p>
+              <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Practical learning for people building a business.</h3>
+              <p className="mt-4 text-lg leading-8 text-navy/80">Explore focused entrepreneurship modules, work through an assessment, and follow a clear learning path.</p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link href="/empower-lab" className="btn-gold">
                   Explore Empower Lab <ArrowRight size={16} />
                 </Link>
               </div>
             </div>
-            <div className="rounded-[2rem] border border-navy/10 bg-navy/15 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">What’s inside</p>
+            <div className="border-l-2 border-gold/60 pl-6 sm:pl-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">What’s inside</p>
               <ul className="mt-5 space-y-3 text-sm leading-7 text-navy/85">
                 <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>Five focused learning modules built around practical entrepreneurship content.</span></li>
                 <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-gold" /><span>PDF learning materials that are easy to open and download.</span></li>
@@ -124,9 +107,9 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Moments</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Moments</p>
         </div>
-        <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-navy/10 bg-navy/10 shadow-sm">
+        <div className="mt-6 overflow-hidden rounded-xl border border-navy/10 bg-white shadow-sm">
           <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-50">
             <div className="absolute left-3 top-3 z-10 rounded-full bg-navy/80 p-2">
               <Sparkles size={16} className="text-gold" />
@@ -143,7 +126,7 @@ export default function HomePage() {
             />
           </div>
           <div className="p-5 sm:p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Our Purpose</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Our Purpose</p>
             <p className="mt-2 text-sm leading-6 text-navy/80">A concise look at the mission and energy behind GGFG.</p>
           </div>
         </div>
@@ -152,15 +135,13 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Core Values</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Core Values</p>
             <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">We create a standard of excellence that founders can inherit.</h3>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {values.map((value) => (
-              <motion.div whileHover={{ y: -6 }} key={value.title} className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm transition-shadow hover:shadow-soft">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
-                  <Compass size={20} />
-                </div>
+            {values.map((value, index) => (
+              <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: index * 0.06 }} key={value.title} className="border-t-2 border-gold/50 pt-5">
+                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-goldDark">0{index + 1}</p>
                 <h4 className="text-xl font-semibold text-navy">{value.title}</h4>
                 <p className="mt-3 text-sm leading-7 text-navy/80">{value.text}</p>
               </motion.div>
@@ -169,24 +150,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
-        <div className="rounded-[2.5rem] border border-navy/10 bg-navy/5 p-8 lg:p-12">
+      <section className="border-y border-navy/10 bg-white/70">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">How GGFG Works</p>
-              <h3 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">GGFG creates impact through four core pillars:</h3>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">How GGFG Works</p>
+              <h3 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">GGFG creates impact through four core pillars.</h3>
             </div>
-            <Link href="/programs" className="inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-navy">
+            <Link href="/programs" className="inline-flex items-center gap-2 text-sm font-semibold text-goldDark transition hover:text-navy">
               View programs <ArrowRight size={16} />
             </Link>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {pillars.map((pillar, index) => (
-              <motion.div key={pillar.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.45, delay: index * 0.05 }} className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+              <motion.div key={pillar.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.45, delay: index * 0.05 }} className="border-t border-navy/20 pt-5">
                 <div className="flex items-center justify-between">
-                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
-                  <BarChart3 size={18} className="text-gold/70" />
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">0{index + 1}</p>
+                  <BarChart3 size={18} className="text-green" />
                 </div>
                 <h4 className="mt-5 text-xl font-semibold text-navy">{pillar.title}</h4>
                 <p className="mt-3 text-sm leading-7 text-navy/85">{pillar.text}</p>
@@ -196,17 +177,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
-        <div className="rounded-[2.5rem] border border-navy/10 bg-navy/10 p-8 shadow-sm lg:p-12">
+      <section className="bg-midnight text-white">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
           <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Explore Our Work</p>
-              <h3 className="mt-3 text-3xl font-semibold text-gold sm:text-4xl">Our initiatives strengthen people, communities, and systems across regions.</h3>
+              <h3 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">Our initiatives strengthen people, communities, and systems across regions.</h3>
             </div>
-            <div className="rounded-[2rem] border border-navy/10 bg-navy/10 p-8">
+            <div className="border-l-2 border-gold/60 pl-6 sm:pl-8">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Empower 50K</p>
-              <p className="mt-4 text-lg leading-8 text-navy/80">Empower 50K is our entrepreneurship and founder-building platform focused on West Africa.</p>
-              <Link href="/empower-50k" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-navy">
+              <p className="mt-4 text-lg leading-8 text-white/80">A long-term entrepreneurship and founder-building initiative focused on West Africa.</p>
+              <Link href="/empower-50k" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold transition hover:text-white">
                 Learn more <ArrowRight size={16} />
               </Link>
             </div>

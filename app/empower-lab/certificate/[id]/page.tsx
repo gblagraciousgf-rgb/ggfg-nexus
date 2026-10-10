@@ -31,7 +31,7 @@ export default function CertificatePage({ params }: { params: { id: string } }) 
             <div className="relative mx-auto flex max-w-4xl flex-col items-center">
               <p className="text-sm font-bold uppercase tracking-[0.34em] text-navy">GGFG Nexus</p>
               <div className="mt-5 h-px w-24 bg-gold" />
-              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-gold">Certificate of Achievement</p>
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.32em] text-goldDark">Certificate of Achievement</p>
               <h1 className="mt-5 text-4xl font-semibold text-navy sm:text-5xl" style={{ fontFamily: 'Georgia, serif' }}>Empower Lab</h1>
               <p className="mt-3 text-sm uppercase tracking-[0.22em] text-navy/65">Modules 1-5 Assessment</p>
 
@@ -45,15 +45,15 @@ export default function CertificatePage({ params }: { params: { id: string } }) 
 
               <div className="mt-12 grid w-full max-w-3xl gap-6 border-t border-navy/15 pt-6 text-left sm:grid-cols-3 sm:text-center">
                 <div>
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold">Completion Date</p>
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-goldDark">Completion Date</p>
                   <p className="mt-2 text-sm font-semibold text-navy">{completionDate}</p>
                 </div>
                 <div>
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold">Certificate ID</p>
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-goldDark">Certificate ID</p>
                   <p className="mt-2 text-sm font-semibold text-navy">{certificate.certificateId}</p>
                 </div>
                 <div>
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-gold">Verification</p>
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-goldDark">Verification</p>
                   <p className="mt-2 text-sm font-semibold text-navy">GGFG Nexus</p>
                 </div>
               </div>

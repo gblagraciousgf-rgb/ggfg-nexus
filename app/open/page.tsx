@@ -43,10 +43,10 @@ export default function OpenPage() {
       <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(201,162,39,0.12),_rgba(255,255,255,1)_55%)]">
         <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-4xl">
-            <p className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+            <p className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-goldDark">
               <Sparkles size={14} /> OPEN
             </p>
-            <h1 className="mt-6 text-4xl font-semibold leading-tight text-gold sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-4xl font-semibold leading-tight text-navy sm:text-5xl lg:text-6xl">
               Opportunities for Promising Entrepreneurs Network
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-navy/80">
@@ -74,7 +74,7 @@ export default function OpenPage() {
 
       <section id="pillars" className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Three core areas</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Three core areas</p>
           <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">A broader ecosystem for entrepreneur growth.</h2>
         </div>
 
@@ -90,10 +90,10 @@ export default function OpenPage() {
                 transition={{ duration: 0.45, delay: index * 0.05 }}
                 className="rounded-[1.75rem] border border-navy/10 bg-navy/10 p-8 shadow-sm"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-goldDark">
                   <Icon size={22} />
                 </div>
-                <h3 className="mt-6 text-2xl font-semibold text-gold">{pillar.title}</h3>
+                <h3 className="mt-6 text-2xl font-semibold text-navy">{pillar.title}</h3>
                 <p className="mt-4 text-base leading-8 text-navy/80">{pillar.text}</p>
               </motion.div>
             );
@@ -105,7 +105,7 @@ export default function OpenPage() {
         <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Why it matters</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Why it matters</p>
               <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">OPEN is bigger than a single grant opportunity.</h2>
             </div>
             <div className="rounded-[2rem] border border-navy/10 bg-navy/5 p-8 shadow-sm">
@@ -119,7 +119,7 @@ export default function OpenPage() {
 
       <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
         <div className="mb-10 max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">How OPEN works</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">How OPEN works</p>
           <h2 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">A space for opportunity, relationship-building, and momentum.</h2>
         </div>
 
@@ -127,10 +127,10 @@ export default function OpenPage() {
           {journey.map((step, index) => (
             <div key={step.title} className="rounded-[1.75rem] border border-navy/10 bg-navy/10 p-8 shadow-sm">
               <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">0{index + 1}</p>
-                <Target size={18} className="text-gold" />
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">0{index + 1}</p>
+                <Target size={18} className="text-goldDark" />
               </div>
-              <h3 className="mt-5 text-2xl font-semibold text-gold">{step.title}</h3>
+              <h3 className="mt-5 text-2xl font-semibold text-navy">{step.title}</h3>
               <p className="mt-4 text-base leading-8 text-navy/80">{step.text}</p>
             </div>
           ))}

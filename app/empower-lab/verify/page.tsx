@@ -41,7 +41,7 @@ export default function VerifyCertificatePage() {
     <main className="min-h-screen bg-[#F7F6F0] text-navy">
       <section className="mx-auto max-w-4xl px-6 py-12 lg:px-8">
         <div className="rounded-[2rem] border border-navy/10 bg-white p-6 shadow-soft sm:p-8 lg:p-10">
-          <div className="flex items-center gap-3 text-gold">
+          <div className="flex items-center gap-3 text-goldDark">
             <span className="text-sm font-semibold uppercase tracking-[0.3em]">Certificate Verification</span>
           </div>
 

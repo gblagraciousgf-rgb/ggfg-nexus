@@ -88,8 +88,8 @@ export default function OurStoryPage() {
               className="grid gap-6 rounded-[2rem] border border-navy/10 bg-white/60 p-8 shadow-sm md:grid-cols-[0.3fr_0.7fr] md:p-10"
             >
               <div className="flex items-start gap-3 md:flex-col md:items-start md:gap-2">
-                <MapPin size={18} className="mt-1 text-gold" />
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">{item.tag}</p>
+                <MapPin size={18} className="mt-1 text-goldDark" />
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">{item.tag}</p>
               </div>
               <div>
                 <h2 className="text-2xl font-semibold text-navy sm:text-3xl">{item.title}</h2>
@@ -119,7 +119,7 @@ export default function OurStoryPage() {
       <section className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
           <motion.div {...fadeUp}>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">From an idea to a mission</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">From an idea to a mission</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight text-navy sm:text-4xl">
               Develop 50,000 entrepreneurs across West Africa by 2050.
             </h2>
@@ -146,7 +146,7 @@ export default function OurStoryPage() {
           {...fadeUp}
           className="rounded-[2rem] border border-navy/10 bg-white/60 p-10 shadow-sm md:p-12"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">The decision to start</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">The decision to start</p>
           <h2 className="mt-4 text-2xl font-semibold text-navy sm:text-3xl">He decided to start.</h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-navy/80">
             Gracious is still completing his degree. He did not wait until everything was figured out before beginning. He started building the mission with a team of people willing to support the vision. That work became GGFG.
@@ -157,7 +157,7 @@ export default function OurStoryPage() {
       {/* 8. Video */}
       <section className="mx-auto max-w-6xl px-6 pb-20 lg:px-8">
         <motion.div {...fadeUp} className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Hear it from Gracious</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Hear it from Gracious</p>
           <h2 className="mt-4 text-3xl font-semibold text-navy sm:text-4xl">The story, told personally.</h2>
         </motion.div>
 
@@ -192,7 +192,7 @@ export default function OurStoryPage() {
       {/* 9. Where we are now */}
       <section className="mx-auto max-w-4xl px-6 pb-20 text-center lg:px-8">
         <motion.div {...fadeUp}>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Where we are now</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Where we are now</p>
           <h2 className="mt-4 text-3xl font-semibold leading-tight text-navy sm:text-4xl">
             The vision has grown. The reason behind it hasn&apos;t.
           </h2>

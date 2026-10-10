@@ -117,14 +117,6 @@ export default function SiteNav() {
 
       </header>
 
-      <a
-        href={giftUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-5 right-5 z-30 btn-gold px-5 py-3 text-xs shadow-lg sm:bottom-6 sm:right-6"
-      >
-        MAKE A GIFT
-      </a>
     </>
   );
 }

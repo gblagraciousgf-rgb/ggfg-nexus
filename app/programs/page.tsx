@@ -33,8 +33,8 @@ export default function ProgramsPage() {
       <section className="border-b border-navy/10 bg-[linear-gradient(135deg,_rgba(201,162,39,0.12),_rgba(255,255,255,1))]">
         <div className="mx-auto max-w-6xl px-6 py-18 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Programs</p>
-            <h1 className="mt-4 text-4xl font-semibold leading-tight text-gold sm:text-5xl">Every program is designed to accelerate the founder from ambition to durable enterprise.</h1>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Programs</p>
+            <h1 className="mt-4 text-4xl font-semibold leading-tight text-navy sm:text-5xl">Every program is designed to accelerate the founder from ambition to durable enterprise.</h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-navy/80">GGFG offers a layered architecture of programs that support founders from early discovery through market expansion and community contribution.</p>
           </motion.div>
         </div>
@@ -46,8 +46,8 @@ export default function ProgramsPage() {
             const Icon = program.icon;
             return (
               <motion.div key={program.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: index * 0.05 }} className="card-hover rounded-[1.75rem] border border-navy/10 bg-navy/10 p-8 shadow-sm">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Icon size={20} /></div>
-                <h3 className="mt-6 text-2xl font-semibold text-gold">{program.title}</h3>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-goldDark"><Icon size={20} /></div>
+                <h3 className="mt-6 text-2xl font-semibold text-navy">{program.title}</h3>
                 <p className="mt-4 text-base leading-8 text-navy/80">{program.body}</p>
               </motion.div>
             );

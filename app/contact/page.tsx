@@ -51,26 +51,26 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] border border-navy/10 bg-navy/5 p-8">
-            <h2 className="text-3xl font-semibold text-gold">Connect with GGFG</h2>
+            <h2 className="text-3xl font-semibold text-navy">Connect with GGFG</h2>
             <div className="mt-8 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Mail size={20} /></div>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-goldDark"><Mail size={20} /></div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Email</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Email</p>
                   <p className="mt-2 text-base text-navy/80">ggfg.org@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><Phone size={20} /></div>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-goldDark"><Phone size={20} /></div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Phone</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Phone</p>
                   <p className="mt-2 text-base text-navy/80">+1 629 239 0929</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold"><MapPin size={20} /></div>
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-goldDark"><MapPin size={20} /></div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Location</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Location</p>
                   <p className="mt-2 text-base text-navy/80">Nashville, TN, USA</p>
                 </div>
               </div>
@@ -78,14 +78,14 @@ export default function ContactPage() {
           </div>
 
           <div className="rounded-[2rem] border border-navy/10 bg-navy/5 p-8 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Send a note</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Send a note</p>
             <p className="mt-3 text-sm leading-7 text-navy/80">GGFG is a Registered 501(c)(3) Organization.</p>
             {submitted ? (
               <div className="mt-6 flex items-start gap-3 rounded-2xl border border-green/20 bg-green/5 p-5 text-navy/85">
                 <CheckCircle2 size={22} className="mt-0.5 shrink-0 text-green" />
                 <p className="text-sm leading-7">
                   Thanks, {name}. Your email app should have opened with your message ready to send. If it didn&apos;t,
-                  email us directly at <a className="font-semibold text-gold underline underline-offset-4" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+                  email us directly at <a className="font-semibold text-goldDark underline underline-offset-4" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
                 </p>
               </div>
             ) : (

@@ -8,8 +8,8 @@ export default function EmpowerLabHomePage() {
       <section className="mx-auto max-w-6xl px-6 py-10 lg:px-8 lg:py-14">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">EMPOWER LAB</p>
-            <h2 className="mt-4 text-4xl font-semibold leading-tight text-gold sm:text-5xl">A practical learning environment for young entrepreneurs.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">EMPOWER LAB</p>
+            <h2 className="mt-4 text-4xl font-semibold leading-tight text-navy sm:text-5xl">A practical learning environment for young entrepreneurs.</h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-navy">
               Empower Lab is a practical entrepreneurship learning experience created by GGFG Nexus as part of Empower 50K. It helps young people develop the mindset, knowledge, and practical skills needed to recognize opportunities, build solutions, understand customers, and develop sustainable businesses.
             </p>
@@ -35,22 +35,22 @@ export default function EmpowerLabHomePage() {
           </div>
 
           <div className="rounded-[2rem] border border-navy/20 bg-navy/5 p-8 shadow-sm">
-            <div className="flex items-center gap-3 text-gold">
+            <div className="flex items-center gap-3 text-goldDark">
               <Target size={18} />
               <p className="text-sm font-semibold uppercase tracking-[0.3em]">Learning Journey</p>
             </div>
             <div className="mt-6 space-y-4">
               <div className="rounded-2xl border border-navy/10 bg-navy/5 p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Start Here</p>
-                <p className="mt-2 text-lg font-semibold text-gold">Build your entrepreneurial mindset.</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Start Here</p>
+                <p className="mt-2 text-lg font-semibold text-navy">Build your entrepreneurial mindset.</p>
               </div>
               <div className="rounded-2xl border border-navy/10 bg-navy/5 p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Then</p>
-                <p className="mt-2 text-lg font-semibold text-gold">Learn to observe problems and opportunities.</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Then</p>
+                <p className="mt-2 text-lg font-semibold text-navy">Learn to observe problems and opportunities.</p>
               </div>
               <div className="rounded-2xl border border-navy/10 bg-navy/5 p-5">
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Finally</p>
-                <p className="mt-2 text-lg font-semibold text-gold">Test ideas, understand customers, and strengthen your business foundations.</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Finally</p>
+                <p className="mt-2 text-lg font-semibold text-navy">Test ideas, understand customers, and strengthen your business foundations.</p>
               </div>
             </div>
           </div>
@@ -61,11 +61,11 @@ export default function EmpowerLabHomePage() {
         <div className="rounded-[2rem] border border-navy/10 bg-navy/5 p-6 shadow-soft sm:p-8 lg:p-10">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Modules</p>
-              <h3 className="mt-2 text-3xl font-semibold text-gold">Your learning dashboard</h3>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Modules</p>
+              <h3 className="mt-2 text-3xl font-semibold text-navy">Your learning dashboard</h3>
             </div>
             <div className="rounded-2xl border border-gold/20 bg-gold/10 px-4 py-3">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Progress</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-goldDark">Progress</p>
               <p className="mt-1 text-lg font-semibold text-navy">Module 1 of 5</p>
               <p className="text-sm text-navy/80">20% complete</p>
             </div>
@@ -78,14 +78,14 @@ export default function EmpowerLabHomePage() {
                   <div>
                     <div className="flex items-center gap-3">
                       <span className="rounded-full bg-navy px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-white">Module {module.number}</span>
-                      <span className="flex items-center gap-2 text-sm font-medium text-gold">
+                      <span className="flex items-center gap-2 text-sm font-medium text-goldDark">
                         <BadgeCheck size={16} /> Practical learning
                       </span>
                     </div>
-                    <h4 className="mt-4 text-2xl font-semibold text-gold">{module.title}</h4>
+                    <h4 className="mt-4 text-2xl font-semibold text-navy">{module.title}</h4>
                     <p className="mt-3 max-w-2xl text-base leading-8 text-navy">{module.intro}</p>
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-gold/10 px-4 py-3 text-sm font-semibold text-navy transition group-hover:border-gold/30 group-hover:text-gold">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-gold/10 px-4 py-3 text-sm font-semibold text-navy transition group-hover:border-gold/30 group-hover:text-goldDark">
                     <BookOpen size={16} /> Open module <ArrowRight size={16} />
                   </div>
                 </div>
@@ -98,15 +98,15 @@ export default function EmpowerLabHomePage() {
       <section className="mx-auto max-w-6xl px-6 pb-16 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Learn</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Learn</p>
             <p className="mt-3 text-lg leading-8 text-navy/85">Move from ideas to practical understanding through structured, calm learning.</p>
           </div>
           <div className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Think</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Think</p>
             <p className="mt-3 text-lg leading-8 text-navy/85">Develop a sharper eye for problems, opportunities, customers, and business value.</p>
           </div>
           <div className="rounded-[1.5rem] border border-navy/10 bg-navy/10 p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">Build & Grow</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-goldDark">Build & Grow</p>
             <p className="mt-3 text-lg leading-8 text-navy/85">Translate learning into action, then continue strengthening your foundation with confidence.</p>
           </div>
         </div>
