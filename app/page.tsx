@@ -4,12 +4,6 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, BarChart3, Sparkles } from 'lucide-react';
 
-const stats = [
-  { value: '50K+', label: 'Entrepreneurs envisioned by 2050' },
-  { value: '12', label: 'Countries engaged in regional strategy' },
-  { value: '90%', label: 'Founder-led programs with mentorship' },
-];
-
 const values = [
   {
     title: 'Leadership',
@@ -44,11 +38,11 @@ export default function HomePage() {
                 <Sparkles size={16} /> Entrepreneurship, leadership, and opportunity
               </p>
               <h1 className="text-balance text-5xl font-semibold leading-[0.95] tracking-tight text-gold sm:text-6xl lg:text-7xl">
-                Building the next generation of entrepreneurs across West Africa.
+                Building people, strengthening communities, and expanding opportunity.
               </h1>
               <div className="mt-6 h-1.5 w-24 rounded-full bg-gradient-to-r from-gold via-gold/70 to-transparent" />
               <p className="mt-4 max-w-2xl text-lg leading-8 text-white/80">
-                GGFG equips founders with the skills, mentorship, and networks to build ventures and create opportunity in their communities.
+                GGFG designs platforms, pathways, and systems that develop leaders, entrepreneurs, and changemakers capable of creating lasting impact.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/empower-50k" className="btn-gold">
@@ -67,13 +61,13 @@ export default function HomePage() {
                 <p className="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-white/70">Entrepreneurs by 2050</p>
                 <p className="mt-6 max-w-sm text-base leading-7 text-white/80">Developing founders across West Africa through mentorship, venture support, and leadership development.</p>
               </div>
-              <div className="grid grid-cols-2 border-t border-white/10 bg-midnight">
-                {stats.slice(1).map((stat) => (
-                  <div key={stat.label} className="p-6 sm:p-8">
-                    <p className="text-3xl font-semibold text-gold">{stat.value}</p>
-                    <p className="mt-2 text-sm leading-6 text-white/70">{stat.label}</p>
-                  </div>
-                ))}
+              <div className="grid gap-4 border-t border-white/10 bg-midnight p-6 sm:grid-cols-[1.1fr_0.9fr] sm:items-center sm:gap-8 sm:p-8">
+                <h2 className="text-balance text-2xl font-semibold leading-tight text-white sm:text-3xl">
+                  Why should where you come from determine how far you can go?
+                </h2>
+                <p className="text-sm leading-7 text-white/75 sm:text-base">
+                  GGFG exists to expand opportunity, develop leaders, and create pathways for people and communities to thrive.
+                </p>
               </div>
             </motion.div>
           </div>
