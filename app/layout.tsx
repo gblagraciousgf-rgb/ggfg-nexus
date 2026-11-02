@@ -18,8 +18,20 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'GGFG | Grind Grow Flourish Give',
-  description: 'GGFG builds founders, cultivates leaders, and strengthens communities through entrepreneurship across West Africa.',
+  description: 'GGFG designs platforms, pathways, and systems that develop leaders, entrepreneurs, and changemakers to strengthen communities and expand opportunity.',
   keywords: ['GGFG', 'entrepreneurship', 'West Africa', 'founders', 'leadership'],
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [{ url: '/apple-icon.png', type: 'image/png', sizes: '180x180' }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: 'GGFG',
+    statusBarStyle: 'black-translucent',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
